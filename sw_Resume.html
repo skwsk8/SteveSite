@@ -1,0 +1,294 @@
+<!--HTML5 - Steve Westhoff (c)2013-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+		</script>
+	<![endif]-->
+	<title>Steve Westhoff - Game Designer and Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="sw_shared.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="sw_scripts_shared.js"></script>
+	<script src="sw_scripts_r.js"></script>
+</head>
+<body onload="getFooterDate('footerText',2013)" itemscope itemtype="http://schema.org/Person">
+	<a name="top"></a>
+	<header>
+		<a href="index.html"><h1 itemprop="name">Steve Westhoff</h1></a>
+		<div id="head_specials">
+			<h4 id="head_pg" itemprop="jobTitle">Programmer - Pl/sql, Java, C#, Lua, Kismet</h4>
+			<h4 id="head_wd" itemprop="jobTitle">Web Developer - Html<span class="head_specials_num">5</span>, Css, JavaScript</h4>
+			<h4 id="head_gd" itemprop="jobTitle">Game Designer - Technical/Systems</h4>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a id="menu_left" onmouseover="hideMenuDropDown()" href="index.html">About</a>
+			</li>
+			<li>
+				<a id="menu_mid_left" onmouseover="showMenuDropDown('m_gd')" onmouseout="startMenuHideDelayTimer()" href="sw_GameDesigner.html">Game Design</a>
+				<div id="m_gd" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_GameDesigner.html#pro">Professional Experience</a>
+					<a href="sw_GameDesigner.html#hobby">Hobbyist Development</a>
+					<a href="sw_GameDesigner.html#early">Early Years Development</a>
+				</div>
+			</li>
+			<li>
+				<a id="menu_mid_right" onmouseover="hideMenuDropDown()" href="sw_Certifications.html">Certifications</a>
+			</li>
+			<li>
+				<a id="menu_right" onmouseover="showMenuDropDown('m_r')" onmouseout="startMenuHideDelayTimer()" href="sw_Resume.html">Resume</a>
+				<div id="m_r" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="#summary">Professional Summary</a>
+					<a href="#career">Career Competency Highlights</a>
+					<a href="#work">Work Experience</a>
+					<a href="#education">Education</a>
+					<a href="#languages">Programming Languages</a>
+					<a href="#skills">Computer Skills</a>
+					<a href="#credits">Credits and Awards</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<section itemscope itemtype="http://schema.org/WebPage">
+		<img class="page_img" src="Images/Resume.png" alt="Resume icon">
+		<h2 class="page_title" itemprop="mainContentOfPage">RESUME</h2>
+		<div id="pdf">
+			<a href="SteveWesthoffResume.pdf" download="SteveWesthoffResume.pdf" target="_blank">Download Resume pdf</a>
+		</div>
+		
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="summary"></a>
+		<article>
+			<img class="page_img" src="Images/Plus.png" alt="Plus icon">
+			<h2 class="page_title">Professional Summary</h2>
+			<br>
+			
+			<p class="desc">I am a highly capable programmer, technical scripter, and game designer.
+			Have worked independently, and with a team, to successfully plan, coordinate, implement, and develop content
+			and technical systems. An easy-going, positive, and goal-driven person who strives to create the highest quality
+			work. Resourceful professional with experience in designing and scripting content and technical systems in visual
+			and text-based languages, have analyzed, recommended, and tested editor	tools improvements.	I wrote design documents
+			and scripted instructional web pages as well as evaluated and written reports on content quality and technical
+			systems effectiveness. I have certifications in HTML5, CSS, JavaScript,	and Game Scripting. Currently I'm programming
+			ETL Interfaces in PL/SQL, Web Services and automated Tools in Java, and am also designing and programming a Unity game in C#.</p>
+		</article>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="career"></a>
+		<article>
+			<img class="page_img" src="Images/ChatBubble2.png" alt="Chat bubble icon">
+			<h2 class="page_title">Career Competency Highlights</h2>
+			<br>
+			
+			<p class="desc">"Steve is one of the stronger developers on the team and is always going above
+			and beyond to expand his knowledge even further... and has even begun to pick up on several areas
+			of DBA expertise. He is always willing to take on any new challenges and is an extremely exceptional
+			independent worker. I know I can depend on him when we face issues occurring in production. He has
+			saved literally hundreds of hours. Steve also delivers exceptional code fixes, scripts,
+			and documentation, ensuring that we meet our SLA's with his quality work. It's wonderful to work with
+			such an independent, trustworthy, and exceptional employee." ~ Kara Donaldson, Operations Support Manager</p>
+			
+			<p class="desc">"Steve is one of the best technical designers and scripters I've worked with.
+			He was stuck with a set of rough tasks and managed to master them. His work was far above what
+			I could have hoped for and he handled numerous difficult issues with a great attitude and work
+			ethic. I would have him on any team I'm part of." ~ Bill Sullivan, Senior Designer</p>
+			
+			<p class="desc">"Any tasks assigned to Steve were always handled efficiently and he often went
+			the extra mile, improving upon the initial design...offering solutions on how to get the same
+			or better results. I often felt that his work was well above his level, allowing me to assign
+			him the same tasks I would a much more senior designer and expect great results." ~ Nik Johansson, Senior Designer</p>
+		</article>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="work"></a>
+		<article>
+			<img class="page_img" src="Images/WorkIcon.png" alt="Document with pencil icon">
+			<h2 class="page_title">Work Experience</h2>
+			<br><br>
+			
+			<h4 class="desc">Accenture</h4>
+			<p class="desc_work_title" itemprop="jobTitle">Software Engineering Senior Analyst (Interface Developer, M&O Team), May 2013 - Present</p>
+			<ul class="work">
+				<li class="game">Iowa Human Services Eligibility System (Web)</li>
+				<li>Programmed ETL Interfaces in PL/SQL and Web Services in Java</li>
+				<li>Programmed automated reporting tools in Java and SQL, saving $135,000 per year</li>
+				<li>Wrote technical design documents and mapped data interfaces</li>
+				<li>Optimized a complex web service, reducing the response time by 87%</li>
+				<li>Reduced batch run time across five procedures from 11 hours down to 2 hours</li>
+			</ul>
+			
+			<h4 class="desc">Disney Interactive - Junction Point Studio</h4>
+			<p class="desc_work_title" itemprop="jobTitle">Associate Game Designer (Technical Designer, Core Systems Team), June 2011 - March 2013</p>
+			<ul class="work">
+				<li class="game">Epic Mickey 2: The Power of Two (PC, Wii, PS3, Xbox 360)</li>
+				<li>Designed, scripted, and maintained technical systems and prefabs in Lua</li>
+				<li>Programmed, wrote, and maintained instructional tutorial web pages on Confluence</li>
+				<li>Orchestrated and validated improvements to custom tools for Gamebryo's Scene Designer</li>
+				<li>Provided technical support to the content designers and outsourced designers, and provided design support to programmers</li>
+				<li>Fixed and polished outsourced 2D levels and in-house 3D levels</li>
+				<li>Created and supported the Build Verification Test map and instructions</li>
+			</ul>
+			
+			<h4 class="desc">Sony Online Entertainment</h4>
+			<p class="desc_work_title" itemprop="jobTitle">Associate Game Designer (Content Designer), August 2009 - March 2011</p>
+			<ul class="work">
+				<li class="game">DC Universe Online (PC, PS3)</li>
+				<li>Designed and scripted gameplay encounters for interior and exterior settings</li>
+				<li>Scripted NPC combat abilities(attacks) and A.I. strategies</li>
+				<li>Designed and scripted several boss fight encounters using Unreal Editor</li>
+				<li>Designed and implemented quest setups, and created in-game cinematics</li>
+				<li>Helped streamline the voice over implementation process</li>
+			</ul>
+			
+			<h4 class="desc">Whirled World Studios</h4>
+			<p class="desc_work_title" itemprop="jobTitle">Designer and Producer, June 2009 - May 2010</p>
+			<ul class="work">
+				<li class="game">Cubis Creatures (iPhone/iPod Touch/iPad)</li>
+				<li>Designed 30 puzzle levels as Fresh Games contractor</li>
+				<li>Implemented and balanced the cube queue for playability, fun, and flow</li>
+				<br>
+				<li class="game">Pinwheel Puzzler (iPhone)</li>
+				<li>Published Pinwheel Puzzler</li>
+				<li>Authored an award-winning design document</li>
+				<li>Designed over 50 puzzle levels</li>
+				<li>Coordinated with artist and programmer to develop the game mechanics, game modes, UI, and award system</li>
+			</ul>
+			
+			<h4 class="desc">Heatwave Interactive</h4>
+			<p class="desc_work_title" itemprop="jobTitle">Design Intern, February 2009 - June 2009</p>
+			<ul class="work">
+				<li>Wrote several design concepts, pitches, and game mechanics documents</li>
+				<li>Researched and wrote several reports on potential competitor products for three new cross-media intellectual properties</li>
+				<li>Designed and programmed a mini-game prototype using C# in Unity</li>
+			</ul>
+			
+			<!--toggle: expand/collapse-->
+			<div id="extraWork">
+				<img id="expandIcon" src="Images/ExpandIcon.png" alt="Expand Icon" onclick="toggleDiv('toggle','moreOrLess')">
+				<span id="moreOrLess" onclick="toggleDiv('toggle','moreOrLess')">More Work Experience</span>
+			</div>
+			<div id="toggle" style="display:none;">
+				<h4 class="desc">Indymac Bank</h4>
+				<p class="desc_work_title" itemprop="jobTitle">Loss Mitigation Negotiator Assistant, December 2008 - February 2009</p>
+				<ul class="work">
+					<li>Collected, organized, and prepared short-sale files</li>
+					<li>Conducted preliminary negotiations with real estate agents</li>
+					<li>Reported preliminary findings, wrote counter offers, and created approval letters</li>
+				</ul>
+				
+				<h4 class="desc">The Ohio State University Medical Center, Emergency Department</h4>
+				<p class="desc_work_title" itemprop="jobTitle">Unit Clerical Associate, December 2004 - August 2008</p>
+				<ul class="work">
+					<li>Responsible for the documentation of diagnostic labs and images</li>
+					<li>Communicated with multiple departments to expedite matters in a high-stress, fast-paced environment</li>
+					<li>Provided technical support for the department</li>
+					<li>Designed a more effective interdepartmental communication form</li>
+				</ul>
+				
+				<h4 class="desc">Virginia Treatment Center For Children</h4>
+				<p class="desc_work_title" itemprop="jobTitle">Volunteer Tutor, January 2004 - May 2004</p>
+				<ul class="work">
+					<li>Mentored and independently taught emotionally disturbed and learning disabled students math and science</li>
+				</ul>
+			</div>
+		</article>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+
+		<a name="education"></a>
+		<article>
+			<img class="page_img" src="Images/EducationIcon.png" alt="Graduation cap icon">
+			<h2 class="page_title">Education</h2>
+			<br>
+			
+			<ul class="work">
+				<li><i>Completed Application Delivery Fundamentals 2.0: Java </i>- Accenture, June 2013</li>
+				<li><i>Certificate in HTML5 </i>- W3Schools.com, May 2013</li>
+				<li><i>Certificate in CSS </i>- W3Schools.com, May 2013</li>
+				<li><i>Certificate in JavaScript </i>- W3Schools.com, May 2013</li>
+				<li><i>Certificate in Game Scripting and Level Design </i>- Austin Community College, May 2009</li>
+				<li><i>Bachelor of Science: Psychology </i>- Virginia Commonwealth University, May 2004</li>
+			</ul>
+		</article>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+
+		<a name="languages"></a>
+		<article>
+			<img class="page_img" src="Images/ComputerLanguagesIcon.png" alt="Programming code icon">
+			<h2 class="page_title">Programming Languages</h2>
+			<br>
+			
+			<ul class="work">
+				<li><i>Proficient:</i> PL/SQL, Java, C#, Lua, Kismet, True Basic</li>
+				<li><i>Certified:</i> HTML5, CSS, JavaScript</li>
+			</ul>
+		</article>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+
+		<a name="skills"></a>
+		<article>
+			<img class="page_img" src="Images/ComputerIcon2.png" alt="Computer icon">
+			<h2 class="page_title">Computer Skills</h2>
+			<br>
+			
+			<ul class="work">
+				<li>Microsoft Office: Word, Visio, PowerPoint, Excel, and Outlook</li>
+				<li>Perforce (P4V)</li>
+				<li>Rational Team Concert (RTC)</li>
+				<li>Confluence</li>
+				<li>Eclipse</li>
+				<li>Oracle WebLogic</li>
+				<li>SoapUI</li>
+				<li>Oracle SQL Developer</li>
+				<li>GIMP</li>
+				<li>Adobe Photoshop</li>
+			</ul>
+		</article>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+
+		<a name="credits"></a>
+		<article>
+			<img class="page_img" src="Images/TrophyIcon2.png" alt="Trophy icon">
+			<h2 class="page_title">Credits and Awards</h2>
+			<br>
+			
+			<ul class="work">
+				<li><i>Accenture Celebrates Excellence (ACE) "Alchemist" Award </i>- Accenture, 2015</li>
+				<li><i>Going the Extra Mile (GEM) Award </i>- Accenture, 2015</li>
+				<li><i>Design credit </i>- Epic Mickey 2: The Power of Two, 2012</li>
+				<li><i>Level Design credit </i>- Cubis Creatures, 2012</li>
+				<li><i>Design credit </i>- DC Universe Online, 2011</li>
+				<li><i>Design and Production credits </i>- Pinwheel Puzzler, 2009</li>
+				<li><i itemprop="award">1st Place </i>- Game Design Contest, Austin Community College, 2008</li>
+				<li><i itemprop="award">Student of the Year </i>- Distributive Education Clubs of America, 2000</li>
+			</ul>
+		</article>
+		
+		<a id="topLink" href="#top">
+			<img id="topIcon" src="Images/TopIcon.png" width="48" height="32" alt="Top Icon">
+		</a>
+	</section>
+	<footer>
+		<p>E-mail: <a href="mailto:steve.westhoff38@gmail.com" target="_blank" itemprop="email">steve.westhoff38@gmail.com</a></p>
+		<p id="footerText">Copyright © 2013 Steven Karl Westhoff. All rights reserved.</p>
+	</footer>
+</body>
+</html>

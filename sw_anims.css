@@ -1,0 +1,354 @@
+/* CSS3 - Steve Westhoff (c)2013 */
+
+/* anim containers */
+#css3anim1
+{
+	position:relative;
+	width:400px;
+	height:400px;
+	background-color:#ffffff;
+	border:1px solid black;
+	margin:5px 0 5px 180px;
+}
+
+#magnetDiv
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+#canvas1,#canvas2
+{
+	background-color:#ffffff;
+	border:1px solid black;
+	margin:0 0 0 280px;
+}
+
+#canvas2
+{
+	margin-left:180px;
+	background-image:url(Images/MagnetFace.jpg);
+	cursor:url(Images/Magnet.png),auto;
+}
+
+#asimoStartBtn,#bounceStartBtn
+{
+	margin-left:310px;
+}
+
+#asimoStopBtn,#bounceStopBtn
+{
+	margin-left:25px;
+}
+
+.paused
+{
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+
+.running
+{
+	animation-play-state:running;
+	-webkit-animation-play-state:running;
+}
+
+/* mobile overrides */
+@media all and (max-width:800px)
+{
+	#css3anim1,#canvas2
+	{
+		margin-left:72px;
+	}
+
+	#canvas1
+	{
+		margin-left:172px;
+	}
+	
+	#asimoStartBtn,#bounceStartBtn
+	{
+		margin-left:202px;
+	}
+}
+
+@media all and (max-width:480px), (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5)
+{
+	#magnetDiv
+	{
+		display:none;
+	}
+	
+	#css3anim1,#canvas2
+	{
+		margin:0px;
+		width:300px;
+	}
+	
+	#canvas2
+	{
+		height:300px;
+		background-size:300px 300px;
+	}
+	
+	#canvas1
+	{
+		margin-left:50px;
+	}
+	
+	#asimoStartBtn,#bounceStartBtn
+	{
+		margin-left:80px;
+	}
+}
+
+
+/* Asimo anim */
+#asimoCurtains
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-image:url('Images/Asimo/Background.png');
+	animation:curtains 10s;
+	-webkit-animation:curtains 10s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+}
+
+@keyframes curtains
+{
+	0% {background-position:left top;}
+	100% {background-position:right top;}
+}
+
+@-webkit-keyframes curtains /*chrome and safari */
+{
+	0% {background-position:left top;}
+	100% {background-position:right top;}
+}
+
+
+#asimoBody
+{
+	position:absolute;
+	width:111px;
+	height:170px;
+	left:60px;
+	top:70px;
+	z-index:1;
+	background-image:url('Images/Asimo/Body.png');
+}
+
+#asimoArmFront
+{
+	position:absolute;
+	width:66px;
+	height:118px;
+	left:90px;
+	top:125px;
+	z-index:3;
+	background-image:url('Images/Asimo/Arm.png');
+	animation:armFront 2s;
+	-webkit-animation:armFront 2s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+	transform-origin:50% 0%;
+	-webkit-transform-origin:50% 0%;
+}
+
+@keyframes armFront
+{
+	0% {transform:rotate(0deg);}
+	50% {transform:rotate(-30deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-webkit-keyframes armFront /*chrome and safari */
+{
+	0% {-webkit-transform:rotate(0deg);}
+	50% {-webkit-transform:rotate(-30deg);}
+	100% {-webkit-transform:rotate(0deg);}
+}
+
+
+#asimoArmBack
+{
+	position:absolute;
+	width:66px;
+	height:118px;
+	left:90px;
+	top:125px;
+	background-image:url('Images/Asimo/Arm.png');
+	animation:armBack 2s;
+	-webkit-animation:armBack 2s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+	transform-origin:50% 0%;
+	-webkit-transform-origin:50% 0%;
+}
+
+@keyframes armBack
+{
+	0% {transform:rotate(-30deg);}
+	50% {transform:rotate(0deg);}
+	100% {transform:rotate(-30deg);}
+}
+
+@-webkit-keyframes armBack /*chrome and safari */
+{
+	0% {-webkit-transform:rotate(-30deg);}
+	50% {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(-30deg);}
+}
+
+
+#asimoLegFront
+{
+	position:relative;
+	width:65px;
+	height:77px;
+	left:90px;
+	top:210px;
+	z-index:2;
+	background-image:url('Images/Asimo/Leg.png');
+	animation:legFront 2s;
+	-webkit-animation:legFront 2s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+	transform-origin:0% 0%;
+	-webkit-transform-origin:0% 0%;
+}
+
+@keyframes legFront
+{
+	0% {transform:rotate(-5deg);}
+	50% {transform:rotate(25deg);}
+	100% {transform:rotate(-5deg);}
+}
+
+@-webkit-keyframes legFront /*chrome and safari */
+{
+	0% {-webkit-transform:rotate(-5deg);}
+	50% {-webkit-transform:rotate(25deg);}
+	100% {-webkit-transform:rotate(-5deg);}
+}
+
+
+#asimoLegBack
+{
+	position:relative;
+	width:65px;
+	height:77px;
+	left:90px;
+	top:130px;
+	background-image:url('Images/Asimo/Leg.png');
+	animation:legBack 2s;
+	-webkit-animation:legBack 2s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+	transform-origin:0% 0%;
+	-webkit-transform-origin:0% 0%;
+}
+
+@keyframes legBack
+{
+	0% {transform:rotate(25deg);}
+	50% {transform:rotate(-5deg);}
+	100% {transform:rotate(25deg);}
+}
+
+@-webkit-keyframes legBack /*chrome and safari */
+{
+	0% {-webkit-transform:rotate(25deg);}
+	50% {-webkit-transform:rotate(-5deg);}
+	100% {-webkit-transform:rotate(25deg);}
+}
+
+
+#asimoFootFront
+{
+	position:absolute;
+	width:73px;
+	height:89px;
+	left:-12px;
+	top:65px;
+	z-index:3;
+	background-image:url('Images/Asimo/Foot.png');
+	animation:footFront 2s;
+	-webkit-animation:footFront 2s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+	transform-origin:90% 0%;
+	-webkit-transform-origin:90% 0%;
+}
+
+@keyframes footFront
+{
+	0% {transform:rotate(-50deg);}
+	25% {transform:rotate(-50deg);}
+	50% {transform:rotate(-10deg);}
+	85% {transform:rotate(10deg);}
+	100% {transform:rotate(-50deg);}
+}
+
+@-webkit-keyframes footFront /*chrome and safari */
+{
+	0% {-webkit-transform:rotate(-50deg);}
+	25% {-webkit-transform:rotate(-50deg);}
+	50% {-webkit-transform:rotate(-10deg);}
+	85% {-webkit-transform:rotate(10deg);}
+	100% {-webkit-transform:rotate(-50deg);}
+}
+
+
+#asimoFootBack
+{
+	position:absolute;
+	width:73px;
+	height:89px;
+	left:-12px;
+	top:65px;
+	z-index:3;
+	background-image:url('Images/Asimo/Foot.png');
+	animation:footBack 2s;
+	-webkit-animation:footBack 2s; /* Safari and Chrome */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite; /* Safari and Chrome */
+	animation-timing-function:linear;
+	-webkit-animation-timing-function:linear; /* Safari and Chrome */
+	transform-origin:90% 0%;
+	-webkit-transform-origin:90% 0%;
+}
+
+@keyframes footBack
+{
+	0% {transform:rotate(-10deg);}
+	35% {transform:rotate(10deg);}
+	50% {transform:rotate(-50deg);}
+	75% {transform:rotate(-50deg);}
+	100% {transform:rotate(-10deg);}
+}
+
+@-webkit-keyframes footBack /*chrome and safari */
+{
+	0% {-webkit-transform:rotate(-10deg);}
+	35% {-webkit-transform:rotate(10deg);}
+	50% {-webkit-transform:rotate(-50deg);}
+	75% {-webkit-transform:rotate(-50deg);}
+	100% {-webkit-transform:rotate(-10deg);}
+}

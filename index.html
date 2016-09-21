@@ -1,10 +1,110 @@
+<!--HTML5 - Steve Westhoff (c)2013-->
+<!--sw_About.html-->
 <!DOCTYPE html>
 <html>
-<!--<header>
-	<meta http-equiv="refresh" content="0; url=http://repo.github.io/folder/index.html" />
-</header>-->
-<body>
-	<h1>Hello World Steve Site2</h1>
-	<p>I'm hosted with GitHub Pages.</p>
+<head>
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+		</script>
+	<![endif]-->
+	<title>Steve Westhoff - Game Designer and Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="sw_shared.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="sw_scripts_shared.js"></script>
+	<script src="sw_scripts_a.js"></script>
+</head>
+<body onload="getFooterDate('footerText',2013); updateAboutImg();" itemscope itemtype="http://schema.org/Person">
+	<header>
+		<a href="index.html"><h1 itemprop="name">Steve Westhoff</h1></a>
+		<div id="head_specials">
+			<h4 id="head_pg" itemprop="jobTitle">Programmer - Pl/sql, Java, C#, Lua, Kismet</h4>
+			<h4 id="head_wd" itemprop="jobTitle">Web Developer - Html<span class="head_specials_num">5</span>, Css, JavaScript</h4>
+			<h4 id="head_gd" itemprop="jobTitle">Game Designer - Technical/Systems</h4>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a id="menu_left" onmouseover="hideMenuDropDown()" href="index.html">About</a>
+			</li>
+			<li>
+				<a id="menu_mid_left" onmouseover="showMenuDropDown('m_gd')" onmouseout="startMenuHideDelayTimer()" href="sw_GameDesigner.html">Game Design</a>
+				<div id="m_gd" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_GameDesigner.html#pro">Professional Experience</a>
+					<a href="sw_GameDesigner.html#hobby">Hobbyist Development</a>
+					<a href="sw_GameDesigner.html#early">Early Years Development</a>
+				</div>
+			</li>
+			<li>
+				<a id="menu_mid_right" onmouseover="hideMenuDropDown()" href="sw_Certifications.html">Certifications</a>
+			</li>
+			<li>
+				<a id="menu_right" onmouseover="showMenuDropDown('m_r')" onmouseout="startMenuHideDelayTimer()" href="sw_Resume.html">Resume</a>
+				<div id="m_r" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_Resume.html#summary">Professional Summary</a>
+					<a href="sw_Resume.html#career">Career Competency Highlights</a>
+					<a href="sw_Resume.html#work">Work Experience</a>
+					<a href="sw_Resume.html#education">Education</a>
+					<a href="sw_Resume.html#languages">Programming Languages</a>
+					<a href="sw_Resume.html#skills">Computer Skills</a>
+					<a href="sw_Resume.html#credits">Credits and Awards</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<section itemscope itemtype="http://schema.org/WebPage">
+		<img class="page_img" src="Images/AboutIcon.jpg" alt="Steve Westhoff icon">
+		<h2 class="page_title" itemprop="mainContentOfPage">ABOUT</h2>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		<div id="aboutImgDiv">
+			<img id="aboutImg1" class="fullOpac" src="Images/SteveComputer.jpg" alt="Web Developer and Game Designer" itemprop="image">
+			<img id="aboutImg2" src="Images/SteveDiplomas.jpg" alt="Bachelor of Science and Technical Certifications">
+			<img id="aboutImg3" src="Images/SteveDiscGolf.jpg" alt="Enjoys disc golf, skateboarding, and video games" itemprop="image">
+			<img id="aboutImg4" src="Images/SteveHacker.jpg" alt="HTML5, CSS3, JavaScript, Lua, and Kismet" onmouseover="showArrows()" onmouseout="hideArrows()" itemprop="image">
+			<div id="aboutImgTextDiv"></div>
+			<div id="aboutImgText1" class="fullOpac">Web Developer, Programmer,<br>and Game Designer</div>
+			<div id="aboutImgText2">Bachelor of Science<br>and Technical Certifications</div>
+			<div id="aboutImgText3">I enjoy disc golf, skateboarding,<br>and video games</div>
+			<div id="aboutImgText4">HTML5, CSS3, JavaScript, Java,<br>PL/SQL, C#, Lua, and Kismet</div>
+			<img id="aboutImgPrev" src="Images/ArrowLeft.png" onmouseover="showArrows()" onclick="prevImg()">
+			<img id="aboutImgNext" src="Images/ArrowRight.png" onmouseover="showArrows()" onclick="nextImg()">
+		</div>
+		<br>
+		<article>
+			<p class="desc about" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				I am a programmer, web developer, and game designer, currently residing in <span itemprop="addressLocality">Austin</span>, <span itemprop="addressRegion">TX</span>.
+				I can be contacted via email at: <a href="mailto:steve.westhoff38@gmail.com" target="_blank" itemprop="email">steve.westhoff38@gmail.com</a>
+			</p>
+			<p class="desc about">
+				I create clean, user-friendly websites using best practices and W3C standards.
+				I hand coded this website using HTML5, CSS3, and JavaScript. I've programmed batch interfaces in PL/SQL and
+				web services in Java. I have design credits on four shipped games:
+				Epic Mickey 2, DC Universe Online, Cubis Creatures, and Pinwheel Puzzler. When I'm not in front of my
+				computer working or playing video games, I enjoy playing disc golf and skateboarding.
+			</p>
+		</article>
+		<div id="aboutLinksDiv">
+			<a href="mailto:steve.westhoff38@gmail.com" target="_blank"><img src="Images/EmailIcon.png" alt="Email icon"></a>
+			<a href="sw_GameDesigner.html"><img src="Images/SpaceInvader.png" alt="Game icon, Space Invader"></a>
+			<a href="sw_Certifications.html"><img src="Images/Certificate.png" alt="Certificate icon"></a>
+			<a href="sw_Resume.html"><img src="Images/Resume.png" alt="Resume icon"></a>
+			<a id="aboutLinksE" class="aboutLinks" href="mailto:steve.westhoff38@gmail.com" target="_blank">Email</a>
+			<a id="aboutLinksG" class="aboutLinks" href="sw_GameDesigner.html">Games</a>
+			<a id="aboutLinksC" class="aboutLinks" href="sw_Certifications.html">Certs</a>
+			<a id="aboutLinksR" class="aboutLinks" href="sw_Resume.html">Resume</a>
+		</div>
+	</section>
+	<footer>
+		<p>E-mail: <a href="mailto:steve.westhoff38@gmail.com" target="_blank" itemprop="email">steve.westhoff38@gmail.com</a></p>
+		<p id="footerText">Copyright © 2013 Steven Karl Westhoff. All rights reserved.</p>
+	</footer>
 </body>
 </html>

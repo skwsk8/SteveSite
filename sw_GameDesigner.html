@@ -1,0 +1,408 @@
+<!--HTML5 - Steve Westhoff (c)2013-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+		</script>
+	<![endif]-->
+	<title>Steve Westhoff - Game Designer and Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="sw_shared.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="sw_scripts_shared.js"></script>
+</head>
+<body onload="getFooterDate('footerText',2013); loadVideos();" itemscope itemtype="http://schema.org/Person">
+	<a name="top"></a>
+	<header>
+		<a href="index.html"><h1 itemprop="name">Steve Westhoff</h1></a>
+		<div id="head_specials">
+			<h4 id="head_pg" itemprop="jobTitle">Programmer - Pl/sql, Java, C#, Lua, Kismet</h4>
+			<h4 id="head_wd" itemprop="jobTitle">Web Developer - Html<span class="head_specials_num">5</span>, Css, JavaScript</h4>
+			<h4 id="head_gd" itemprop="jobTitle">Game Designer - Technical/Systems</h4>
+		</div>	
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a id="menu_left" onmouseover="hideMenuDropDown()" href="index.html">About</a>
+			</li>
+			<li>
+				<a id="menu_mid_left" onmouseover="showMenuDropDown('m_gd')" onmouseout="startMenuHideDelayTimer()" href="sw_GameDesigner.html">Game Design</a>
+				<div id="m_gd" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="#pro">Professional Experience</a>
+					<a href="#hobby">Hobbyist Development</a>
+					<a href="#early">Early Years Development</a>
+				</div>
+			</li>
+			<li>
+				<a id="menu_mid_right" onmouseover="hideMenuDropDown()" href="sw_Certifications.html">Certifications</a>
+			</li>
+			<li>
+				<a id="menu_right" onmouseover="showMenuDropDown('m_r')" onmouseout="startMenuHideDelayTimer()" href="sw_Resume.html">Resume</a>
+				<div id="m_r" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_Resume.html#summary">Professional Summary</a>
+					<a href="sw_Resume.html#career">Career Competency Highlights</a>
+					<a href="sw_Resume.html#work">Work Experience</a>
+					<a href="sw_Resume.html#education">Education</a>
+					<a href="sw_Resume.html#languages">Programming Languages</a>
+					<a href="sw_Resume.html#skills">Computer Skills</a>
+					<a href="sw_Resume.html#credits">Credits and Awards</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<section itemscope itemtype="http://schema.org/WebPage">
+		<img class="page_img" src="Images/SpaceInvader.png" alt="Space Invader">
+		<h2 class="page_title" itemprop="mainContentOfPage">GAME DESIGN</h2>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="pro"></a>
+		<article>
+			<img class="page_img" src="Images/KeyboardMouse.png" alt="Keyboard and Mouse icon">
+			<h2 class="page_title">Professional Experience</h2>
+			<br><br>
+			
+			<h4 class="desc">Epic Mickey 2: The Power of Two</h4>
+			<p class="desc_tools"><b>Tools Used:</b> Gamebryo's Scene Designer, Perforce (P4V)<br>
+			<b>Language:</b> Lua</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover" src="Images/EpicMickey.jpg" alt="Epic Mickey 2 box cover">
+					Disney's Epic Mickey 2: The Power of Two is an action-adventure	platforming game
+					where Mickey Mouse joins up with Oswald the Lucky Rabbit on an epic journey to stop an unknown enemy from destroying Wasteland.
+				</p>
+				<img class="screen gameDivRimg" src="Images/EpicMickey2.jpg" title="Skeleton Dance" alt="Epic Mickey 2, Skeleton Dance level">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">While at Disney Interactive's Junction Point Studio, I was a technical designer responsible for improving and validating tools,
+				providing technical support to the content designers, and scripting and maintaining several prefabs	and systems,
+				such as the multi-track 2D system, one-way collision prefab, and AI navigation prefabs. I also inherited all of the outsourced 2D levels
+				to fix and polish into a publishable product, and fixed some of the game's trickier content bugs in the 3D levels.</p>
+				<br>
+				<iframe id="vidEM2" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">DC Universe Online</h4>
+			<p class="desc_tools"><b>Tools Used:</b> Unreal Editor 3 (proprietary modified version), Perforce (P4V)<br>
+			<b>Language:</b> Kismet (proprietary modified version, visual scripting)</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover" src="Images/DCUO.jpg" alt="DC Universe Online box cover">
+					Sony's DC Universe Online is a fast-paced action MMO where DC Comic's superheroes and supervillians,
+					such as Batman, Superman, Lex Luthor, and Joker, fight for the future of their universe in hand-to-hand combat.
+				</p>
+				<img class="screen gameDivRimg" src="Images/Catwoman.jpg" title="Catwoman boss fight" alt="DC Universe Online, Catwoman boss fight">
+			</div>
+			<div class="gameDivL">		
+				<p class="desc">As a content designer at Sony Online Entertainment in Austin, I was responsible for encounter design,
+				NPC and ability creation, AI strategy creation, and recording and implementing temporary voice overs.
+				I worked on creating instanced "dungeon" areas,	cinematic scenes, and outdoor quest zones. As my skills quickly progressed,
+				I began making several mini-boss fights and was given the honor of making the Catwoman boss fight,
+				which was the central feature of the game's first live patch! I also picked up several outdoor and interior content zones
+				and brought them from a beta state to a fun and polished publishable state.</p>
+				<br>
+				<iframe id="vidDCUO" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Cubis Creatures</h4>
+			<p class="desc_tools"><b>Tool Used:</b> Proprietary</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/Cubis2.jpg" alt="Cubis Creatures title screen">
+					Cubis Creat&shy;ures is an enter&shy;taining and addictive puzzle game where players shoot blocks to match colors within a time limit,
+					aiming to break the "star" blocks and awaken the creatures from their magic-induced slumber.
+				</p>
+				<img class="screen gameDivRimg" src="Images/Cubis.jpg" title="Puzzle level" alt="Cubis Creatures, puzzle level">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">As a contractor for Fresh Games, I was a level designer responsible for the creation of 30 puzzle levels.
+				I designed the layouts on paper, implemented them in the game's level editor, adjusted the "block queues" for type, color, and weighting,
+				and then play tested and refined the levels until they were enjoyable and challenging!</p>
+				<br>
+				<iframe id="vidCubis" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Pinwheel Puzzler</h4>
+			<p class="desc_tools"><b>Tool Used:</b> Apple's XCode</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/Pinwheel2.jpg" alt="Pinwheel Puzzler title screen">
+					Pin&shy;wheel Puzzler is a color and spatial recognition puzzle game where players rotate pinwheel squares
+					to match the target pattern, so Sunny, the main character, can clear up the weather and bring warmth to the land.
+					The game features unique swipes, rubs, and flips of the iPhone to remove weather related hazards such as rain,
+					frost, and wind-blown leaves.
+				</p>
+				<img class="screen gameDivRimg" src="Images/Pinwheel3.jpg" title="Puzzle level" alt="Pinwheel Puzzler, puzzle level">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">I founded Whirled World Studios, and designed and produced Pinwheel Puzzler.
+				As producer, I collaborated with a programmer and an artist to develop the game throughout production,
+				and handled the legal aspects of the business. As designer, I designed the game mechanics,
+				game modes, 50 puzzle levels, the story, UI, and reward systems.</p>
+				<p class="desc">Austin Community College awarded me 1st Place in a design competition for the game!</p>
+				<br>
+				<iframe id="vidPP" width="224" height="126" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Heatwave Interactive</h4>
+			<p class="desc_tools"><b>Tools Used:</b> Unity, Perforce (P4V)<br>
+			<b>Language:</b> C#</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover2" src="Images/HeatwaveLogo.jpg" alt="Heatwave Interactive fire logo">
+					Heatwave Interactive is an entertain&shy;ment software studio focusing on creating high quality
+					intellectual properties that are designed from day one for cross-media tie-ins and online connectivity.
+				</p>
+				<img class="screen gameDivRimg" src="Images/HeatwaveLogo2.jpg" alt="Heatwave Interactive HI logo">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">While at Heatwave Interactive, I was a design intern responsible for the research and
+				report of potential competitor products, designing game mechanics and systems, and further developing
+				three existing intellectual properties. I began programming a digital prototype for one of those IPs,
+				but the project has not been made public.</p>
+				<br>
+				<img class="middleScreen" src="Images/HeatwaveProject.jpg" alt="Head with question marks">
+			</div>
+			<div class="clear"></div>
+		</article>
+		
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="hobby"></a>
+		<article>
+			<img class="page_img" src="Images/GameController2.png" alt="Knock-off Xbox controller">
+			<h2 class="page_title">Hobbyist Development</h2>
+			<br><br>
+			
+			<h4 class="desc">Call of Duty: World At War - Nazi Zombies</h4>
+			<p class="desc_tools"><b>Tool Used:</b> Radiant</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/CODWAW.jpg" alt="Call of Duty: World At War: Zombies title screen">
+					Call of Duty: World At War intro&shy;duced a new game mode called "Nazi Zombies," where players were surrounded by slow moving zombies.
+					The zombies moved progressivley faster and in larger numbers, challenging the players to survive as many rounds as they could.
+				</p>
+				<img class="screen gameDivRimg" src="Images/CODWAW_2.jpg" alt="Nazi Zombie">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">As a fan of long-range sniping in Call of Duty, I noticed the stock zombie map was in a very tight space,
+				making the sniper rifle in the level pretty useless. I decided to make the zombie map, Sniper's Bridge, as a survival skillshot
+				level with wide-open spaces for sniping, while maintaining the claustrophobic feel of enemies collapsing in from all around. 
+				The level included alternative weapons such as a rifle, a shotgun, and even a hidden flamethrower! 
+				I also modified the wooden planks prefab that normally covers the windows, changing it into broken fence
+				pieces to better fit the aesthetics of the level.</p>
+				<br>
+				<iframe id="vidWAW" width="224" height="126" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Gears of War</h4>
+			<p class="desc_tools"><b>Tool Used:</b> Unreal Editor 3<br>
+			<b>Language:</b> Kismet (visual scripting)</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover" src="Images/Gears.jpg" alt="Gears of War box cover">
+					Gears of War is a popular third-person shooter that features pop-n-stop gameplay, futuristic military style weapons,
+					and rippingly grusome chainsaw melee attacks.
+				</p>
+				<img class="screen gameDivRimg" src="Images/Unreal.jpg" alt="Unreal Editor screenshot">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">As game design students, we were challenged to create a Gears of War level that used randomly picked songs
+				from Guns N'Roses "Use Your Illusion" albums to influence the level's design. Unfortunately, I got the song "Yesterday's",
+				which did not fit the action-packed style of the game. Consequently, I decided to take it in an artistic direction
+				that would allow me	to learn in-game cinematics, since I was already comfortable with the basics of map creation.</p>
+				<br>
+				<iframe id="vidGW" width="224" height="126" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Neverwinter Nights</h4>
+			<p class="desc_tools"><b>Tool Used:</b> Aurora<br>
+			<b>Language:</b> NWScript (similar to C and Java)</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover" src="Images/NWN2.jpg" alt="Neverwinter Nights box cover">
+					Never&shy;winter Nights is a Dung&shy;eons & Dragons style third-person, fantasy role-playing
+					game where mages, priests, rogues, and others set out to find the four creatures needed to cure the Wailing Death plague.
+				</p>
+				<img class="screen gameDivRimg" src="Images/NWN.jpg" alt="Aurora editor screenshot">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">In my game scripting class, we were given the opportunity to create any type of epic quest we desired.
+				My team of three decided to create Monty Python and the Holy Grail as our epic questline.
+				I researched the movie for some interesting and memorable scenarios to bring into the game. My teammates
+				and I each selected our favorite scenes to build. I selected the Holy Hand Grenade of Antioch,
+				and focused on scripting Tim the Enchanter, casting fire spells around the mountains and the priests walking
+				around a winding path, chanting. The player had to talk to the priests, receive the Holy Hand Grenade,
+				and then use it on the Killer Rabbit of Caerbannog to progress to the next section. Unfortunately,
+				the game files were eaten by the Legendary Black Beast of Aaaaarrrrrrggghhh, so the video below is
+				just a clip from the movie.</p>
+				<br>
+				<iframe id="vidNWN" width="224" height="126" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Call of Duty 4</h4>
+			<p class="desc_tools"><b>Tool Used:</b> Radiant</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover" src="Images/COD4.jpg" alt="Call of Duty 4 box cover">
+					Call of Duty 4 is one of my all time favorite shooter games! The single-player campaign
+					is impressive and dynamic, and the multi-player is amazing and addictive.
+				</p>
+				<img class="screen gameDivRimg" src="Images/COD4_2.jpg" alt="Radiant editor screenshot">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">Having played Call of Duty 4 multi-player through all ten ranks of prestige,
+				I knew exactly what kind of map I wanted to make when I decided to teach myself game design.
+				I wanted to juxtapose a long-range mostly open space alongside a narrow passageway with tight corners and dark spaces.
+				The resulting map, Tree Top Lab, was a tree covered hillside with a hidden underground bunker.
+				I added several buildings and obstacles to create maximum sniping distance without affecting performance,
+				placed numerous obstacles in the interiors with specifically placed lighting, and time-tested running distances
+				to ensure that both teams' sides of the map were balanced for each of the multi-player game modes.</p>
+				<br>
+				<iframe id="vidCOD4" width="224" height="126" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Ranch Rush</h4>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/RanchRush2.jpg" alt="Ranch Rush title screen">
+					Ranch Rush is a time manag&shy;e&shy;ment farming game where the main character, Sara, is on a mission to
+					reinvigorate her father's farm and save it from the bank.
+				</p>
+				<img class="screen gameDivRimg" src="Images/RanchRush.jpg" alt="Ranch Rush, gameplay screenshot">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">As a volunteer for Fresh Games, a premium casual games publisher, I tested Ranch Rush to analyze
+				the design's entertainment value and playability, as well as functional quality, and wrote a design analysis
+				documenting my findings for them.</p>
+				<br>
+				<iframe id="vidRR" width="224" height="126" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="clear"></div>
+		</article>
+		
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="early"></a>
+		<article>
+			<img class="page_img" src="Images/GameController.png" alt="Nintendo controller">
+			<h2 class="page_title">Early Years Development</h2>
+			<br><br>
+			
+			<h4 class="desc">Snake and Towers of Hanoi</h4>
+			<p class="desc_tools"><b>Language:</b> True Basic</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="cover2" src="Images/TrueBasic.jpg" alt="True Basic floppy disk">
+					True Basic is a variant of the Basic program&shy;ming language that implemented global and local variables for
+					recursion functions and subroutines. It also featured a pixel canvas for graphics primitives and "blitting,"
+					making it preferable for video game creation.
+				</p>
+				<img class="screen gameDivRimg" src="Images/TrueBasic_TowerHanoi.jpg" alt="Towers of Hanoi example">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">In my high school programming class, our second semester project was to program a video game.
+				I decided to program the classic game Snake, which turned out to be an enjoyable learning experience.
+				I coded, fixed bugs, and polished until the game was complete, finishing early enough to work on another project!
+				For my extra project, I chose another classic game, Towers of Hanoi, which I managed to
+				program and refine before the semesters end.</p>
+				<br>
+				<img class="middleScreen" src="Images/TrueBasic_Snake.jpg" alt="Snake gameplay screenshot">
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">TI-83 Games</h4>
+			<p class="desc_tools"><b>Language:</b> TI-BASIC</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/ti83Sk8quest.jpg" alt="Sk8quest title screen">
+					TI-BASIC is a limited, high-level programm&shy;ing language used on Texas Instruments' graphing calculators.
+					It uses simple operations and complex mathematical computation to plot and draw on the graph screen.
+				</p>
+				<img class="screen gameDivRimg" src="Images/ti83LightsOut.jpg" alt="Lights Out gameplay example">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">Throughout high school, I programmed dozens of different games on my TI-83 calculator.
+				Building upon my fundamental understanding of programming basics, I experimented with the
+				calculator's functions and taught myself how to recreate many of my favorite computer games from childhood.
+				Some of the games I programmed included: Lights Out, Simon, Connect Four, Tic-Tac-Toe, Castle Adventure, Sk8 Quest, and others.</p>
+				<br>
+				<img class="middleScreen" src="Images/ti83ConnectFour.jpg" alt="Connect Four code screenshot">
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Number Munchers</h4>
+			<p class="desc_tools"><b>Language:</b> Basic</p>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/DOS_Basic.jpg" alt="Basic code screenshot, complex">
+					Number Munch&shy;ers is an educa&shy;tional video game where players moved a Muncher character around a grid,
+					selecting grid values that matched the level's numerical expression while avoiding the enemy Troggles.
+				</p>
+				<img class="screen gameDivRimg" src="Images/NumberMunchers.jpg" alt="Number Munchers gameplay screenshot">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">In elementary school, as a math nerd, I was absolutely thrilled by the game Number Munchers!
+				I loved it so much, I begged my parents to buy it for me. Unfortunately, we did not have an Apple computer,
+				so my dad offered to program the game on our PC, if I was willing to program it with him.
+				Every Saturday for a couple months, he taught me what he was doing and why, while he programmed a simplistic
+				version of the game. Dad's early instructions formed the way I think about games and programming,
+				and I am greatful to have gained that knowledge.</p>
+				<br>
+				<img class="middleScreen" src="Images/DOS_Basic2.jpg" alt="Basic code screenshot, simple">
+			</div>
+			<div class="clear"></div>
+			
+			<h4 class="desc">Digger</h4>
+			<div class="gameDivR">
+				<p class="desc">
+					<img class="coverScreen" src="Images/XtreeGold.jpg" alt="XtreeGold on computer screen">
+					Digger is a comp&shy;uter game similar to the arcade games Mr. Do! and Dig Dug. The player has to collect
+					diamonds and gold bags while avoiding or shooting enemy Nobbins and Hobbins.
+				</p>
+				<img class="screen gameDivRimg" src="Images/Digger.jpg" alt="Digger gameplay screenshot, level 2">
+			</div>
+			<div class="gameDivL">
+				<p class="desc">Digger was one of my favorite games as a young kid. I repetitively played the game and
+				had all the levels memorized. One day, we got a new file visualization program, called XTree Gold.
+				Immediately, I tried to figure out how to run the game. I stumbled across a file that had patterns of letters
+				that looked just like the levels I had memorized. After studying the patterns of letters, I was sure the
+				letters represented those levels (where D was for Diamond and G was for Gold bag, etc). I decided to try modifying
+				the difficult levels, so that the far away, difficult to get Diamonds were closer and easier to get.
+				To my amazement, when I finally found how to launch the exe file, that's exactly what those patterns of letters were,
+				the game's level files. I was thrilled, my first mod worked!</p>
+				<br>
+				<img class="middleScreen" src="Images/Digger2.jpg" alt="Digger gameplay screenshot, level 1">
+			</div>
+			<div class="clear"></div>
+		</article>
+		
+		<a id="topLink" href="#top">
+			<img id="topIcon" src="Images/TopIcon.png" width="48" height="32" alt="Top Icon">
+		</a>
+	</section>
+	<footer>
+		<p>E-mail: <a href="mailto:steve.westhoff38@gmail.com" target="_blank" itemprop="email">steve.westhoff38@gmail.com</a></p>
+		<p id="footerText">Copyright © 2013 Steven Karl Westhoff. All rights reserved.</p>
+	</footer>
+</body>
+</html>
