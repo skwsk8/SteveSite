@@ -37,7 +37,6 @@ function loadVideos()
 {
 	if (screen.width >= 800)
 	{
-		document.getElementById("vidPsyche").src="https://www.youtube.com/embed/6X6hw6JB17s";
 		document.getElementById("vidEM2").src="https://www.youtube.com/embed/0MyK8I3b-fA";
 		document.getElementById("vidDCUO").src="https://www.youtube.com/embed/ywt5SqXxpSI";
 		document.getElementById("vidCubis").src="https://www.youtube.com/embed/pVLC2CicoEg";
