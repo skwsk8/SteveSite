@@ -1,0 +1,130 @@
+<!--HTML5 - Steve Westhoff (c)2013-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+		</script>
+	<![endif]-->
+	<title>Steve Westhoff - Game Designer and Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="sw_shared.css" rel="stylesheet" type="text/css">
+	<link href="sw_anims.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="sw_scripts_shared.js"></script>
+	<script src="sw_scripts_wd.js"></script>
+</head>
+<body onload="getFooterDate('footerText',2013); initCanvases();" onresize="doResize();" itemscope itemtype="http://schema.org/Person">
+	<a name="top"></a>
+	<header>
+		<a href="sw_About.html"><h1 itemprop="name">Steve Westhoff</h1></a>
+		<div id="head_specials">
+			<h4 id="head_pg" itemprop="jobTitle">Programmer - Pl/sql, Java, C#, Lua, Kismet</h4>
+			<h4 id="head_wd" itemprop="jobTitle">Web Developer - Html<span class="head_specials_num">5</span>, Css, JavaScript</h4>
+			<h4 id="head_gd" itemprop="jobTitle">Game Designer - Technical/Systems</h4>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a id="menu_left" onmouseover="hideMenuDropDown()" href="sw_About.html">About</a>
+			</li>
+			<li>
+				<a id="menu_mid_left" onmouseover="showMenuDropDown('m_gd')" onmouseout="startMenuHideDelayTimer()" href="sw_GameDesigner.html">Game Design</a>
+				<div id="m_gd" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_GameDesigner.html#pro">Professional Experience</a>
+					<a href="sw_GameDesigner.html#hobby">Hobbyist Development</a>
+					<a href="sw_GameDesigner.html#early">Early Years Development</a>
+				</div>
+			</li>
+			<li>
+				<a id="menu_mid_right" onmouseover="showMenuDropDown('m_wd')" onmouseout="startMenuHideDelayTimer()" href="sw_WebDeveloper.html">Web Developement</a>
+				<div id="m_wd" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="#certs">Certifications</a>
+					<a href="#css3anims">CSS3 Animation</a>
+					<a href="#canvasAnims">HTML5 Canvas Animation</a>
+				</div>
+			</li>
+			<li>
+				<a id="menu_right" onmouseover="showMenuDropDown('m_r')" onmouseout="startMenuHideDelayTimer()" href="sw_Resume.html">Resume</a>
+				<div id="m_r" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_Resume.html#summary">Professional Summary</a>
+					<a href="sw_Resume.html#career">Career Competency Highlights</a>
+					<a href="sw_Resume.html#work">Work Experience</a>
+					<a href="sw_Resume.html#education">Education</a>
+					<a href="sw_Resume.html#languages">Programming Languages</a>
+					<a href="sw_Resume.html#skills">Computer Skills</a>
+					<a href="sw_Resume.html#credits">Credits and Awards</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<section id="sect" itemscope itemtype="http://schema.org/WebPage">
+		<img class="page_img" src="Images/Certificate.png" alt="Computer with globe on screen">
+		<h2 class="page_title" itemprop="mainContentOfPage">WEB DEVELOPMENT</h2>
+		<img class="LB" src="Images/LineBreak.png" alt="Line break">
+		<br>
+		
+		<a name="certs"></a>
+		<img class="page_img" src="Images/HTML5_CSS3_JavaScript.png" alt="HTML5, CSS3, and JavaScript logos">
+		<h2 class="page_title">HTML5/CSS3/JavaScript</h2>
+		<br><br>
+		
+		<h4 class="desc">Certifications</h4>
+		<a href="http://www.refsnesdata.no/certification/w3certified.asp?id=4975367" target="_blank">
+			<img src="Images/W3certIcon.png" width="200" height="68" style="border:0px" alt="W3Schools logo">
+		</a>
+		<p class="desc">I am <a href="http://www.refsnesdata.no/certification/w3certified.asp?id=4975367" target="_blank">
+		certified</a> in HTML5, CSS, and JavaScript from W3Schools.com</p>
+		
+		<a name="css3anims"></a>
+		<h4 class="desc">CSS3 Animation</h4>
+		<p class="desc">Here is a CSS3 animation of the robot Asimo (press Start button below):</p>
+		<div id="css3anim1">
+			<div id="asimoCurtains" class="paused"></div>
+			<div id="asimoBody"></div>
+			<div id="asimoArmFront" class="paused"></div>
+			<div id="asimoArmBack" class="paused"></div>
+			<div id="asimoLegFront" class="paused">
+				<div id="asimoFootFront" class="paused"></div>
+			</div>
+			<div id="asimoLegBack" class="paused">
+				<div id="asimoFootBack" class="paused"></div>
+			</div>
+		</div>
+		<input id="asimoStartBtn" type="button" onclick="asimoStart()" value="  Start   ">
+		<input id="asimoStopBtn" type="button" onclick="asimoStop()" value=" Stop  " disabled>
+		<br>
+		
+		<a name="canvasAnims"></a>
+		<h4 class="desc">HTML5 Canvas Animation</h4>
+		<p class="desc">Here's a simple canvas animation (press Random button below):</p>
+		<canvas id="canvas1" width="200" height="200">Your browser is old. Please get the latest version of your browser.</canvas>
+		<br>
+		<input id="bounceStartBtn" type="button" onclick="startDraw1()" value="Random">
+		<input id="bounceStopBtn" type="button" onclick="stopDraw1()" value="Stop" disabled>
+		<br><br>
+		
+		<div id="magnetDiv">
+			<p class="desc">And here is a more complex canvas animation with interactivity via JavaScript:</p>
+			<p id="magnetDesc" class="desc">(Touch and drag slowly around the canvas box below)</p>
+			<canvas id="canvas2" width="400" height="400">Your browser is old. Please get the latest version of your browser.</canvas>
+		</div>
+		<!-- mini-game section?-->
+		<a id="topLink" href="#top">
+			<img id="topIcon" src="Images/TopIcon.png" width="48" height="32" alt="Top Icon">
+		</a>
+	</section>
+	<footer>
+		<p>E-mail: <a href="mailto:steve.westhoff38@gmail.com" target="_blank" itemprop="email">steve.westhoff38@gmail.com</a></p>
+		<p id="footerText">Copyright © 2013 Steven Karl Westhoff. All rights reserved.</p>
+	</footer>
+</body>
+</html>

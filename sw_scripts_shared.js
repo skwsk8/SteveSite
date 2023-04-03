@@ -56,10 +56,10 @@ function getFooterDate(footerText,originYear)
 	var d = new Date();
 	if (d.getFullYear() == originYear)
 	{
-	footerText.innerHTML="Copyright &copy; "+originYear+" Steven Karl Westhoff. All rights reserved.";
+	footerText.innerHTML="&copy; "+originYear+" Steven Karl Westhoff. All rights reserved.";
 	}
 	else
 	{
-	footerText.innerHTML="Copyright &copy; "+originYear+"-"+d.getFullYear()+" Steven Karl Westhoff. All rights reserved.";
+	footerText.innerHTML="&copy; "+originYear+"-"+d.getFullYear()+" Steven Karl Westhoff. All rights reserved.";
 	}
 }
